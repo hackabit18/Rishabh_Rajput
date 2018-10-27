@@ -1,5 +1,5 @@
 # Rishabh_Rajput
-## Image_Identifier
+## ToGIV(Tool to Give every Image a Voice)
 
 Install dependencies
 
