@@ -9,7 +9,7 @@ b) A product that automatically generates captions for social media websites lik
 In the future, it can aid news/media companies to deal with high volume image scanning or high document inflow by developing a tool for image captioning.
 
 
-***Install dependencies
+### Install dependencies
 
 `pip3 install flask`
 
