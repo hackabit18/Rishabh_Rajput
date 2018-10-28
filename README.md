@@ -1,7 +1,9 @@
 # Rishabh_Rajput
 ## ToGIV(Tool to Give every Image a Voice)
-# Introduction
+# The idea
 We ideate an image to text and image to audio platform that makes possible the decoding of images for social and entrepreneurial benefits. We seek to develop an end to end application with an accompanying API which takes any image as input and using Random Forest Classifier, classifies it as a monument and then uses a CNN-RNN architecture returns accurate captions and descriptions for the image, if it is not a monument detected by the classifier.
+
+# Tools and technologies
 
 **Our main lines of ideas to develop a proof of concept demonstrating a use case include**:-
 * a) Developing a categorizing tool which takes an image input and returns a description of the monument if the image classifies as a well known monument of India and gives a generic caption for the image otherwise. 
@@ -11,6 +13,7 @@ We ideate an image to text and image to audio platform that makes possible the d
 
 In the future, it can aid news/media companies to deal with high volume image scanning or high document inflow by developing a tool for image captioning.
 
+# Run the program
 
 ### Install dependencies
 
