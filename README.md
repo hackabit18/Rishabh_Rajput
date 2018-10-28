@@ -13,6 +13,13 @@ We ideate an image to text and image to audio platform that makes possible the d
 
 In the future, it can aid news/media companies to deal with high volume image scanning or high document inflow by developing a tool for image captioning.
 
+### Tools and Technologies used:
+
+* for Web Implementation : **HTML**, **CSS** **Flask(Web Framework written in Python)**, **gtts python library(For text to speech)**
+
+* for Caption Generation : **Keras**, **TensorFlow**, **ScikitLearn**, **Anaconda(tool)**
+
+
 # Run the program
 
 ### Install dependencies
