@@ -3,12 +3,18 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pic3.jpg);
+  height: 100vh;
+  background-size: cover;
+  font-family: sans-serif;
+  font-sizw: lem;
+  line-height: 1.5em;
+  color: white; 
 }
 
 /* Style the header */
 header {
-    background-color: #666;
+    background-color: darkorange;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -45,9 +51,11 @@ section:after {
     clear: both;
 }
 
+
+
 /* Style the footer */
 footer {
-    background-color: #777;
+    background-color: darkorange;
     padding: 10px;
     text-align: center;
     color: white;
