@@ -6,6 +6,7 @@ import glob
 import skimage.io as io
 from skimage.transform import rescale, resize
 import skimage.color as co
+from werkzeug import secure_filename
 
 
 
@@ -41,7 +42,7 @@ def name_of_monument(argument):
 def predict_monument():
     ip_dir = "static/images"
     ip_file = glob.glob(os.path.join(ip_dir,"*"))
-    img = io.imread(ip_file[0])
+    img = io.imread(ip_file[-1])
     img1 = co.rgb2hsv(resize(img, (32,32,3),anti_aliasing=False))
     ip_np_arr = np.reshape(img1,(1,32*32*3))
     filename = 'finalized_model.sav'
@@ -49,12 +50,6 @@ def predict_monument():
     class_num = loaded_model.predict(ip_np_arr)
     class_text = name_of_monument(int(class_num))
     return class_text
-
-
-
-
-
-
 
 @app.route('/upload')
 def upload_file():
@@ -64,13 +59,12 @@ def upload_file():
 def upload_files():
    if request.method == 'POST':
       f = request.files['file']
-      f.save(secure_filename(f.filename))
+      f.save(os.path.join("static/images",secure_filename(f.filename)))
       final_text = predict_monument()
-      return final_text
       if final_text == "Unlabelled":
         return "The image is not a monument! :("
       else:
-        return "The monument is "+final_text
+        return "The monument is "+final_text+"."
     
 if __name__ == '__main__':
    app.run(debug = True)

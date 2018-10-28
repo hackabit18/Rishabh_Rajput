@@ -7,13 +7,17 @@ a) Developing a categorizing tool which takes an image input and returns a descr
  A further extension of this is a assistance tool for blind people which enables them to gain a description place through automatic audio description of a captured image using Computer and NLP. We will use image caption generator model to generate a caption for a given image and further generate audio output from text.
 b) A product that automatically generates captions for social media websites like Instagram, Tumblr, Pintrest etc instead of manually captioning images, ensuring the image's content remains intact while saving time as well. The quality of text output will be dramatically improved to optimise for easy information sharing and vitality by fine tuning the model using scraped image-caption pairs from social media platforms.
 In the future, it can aid news/media companies to deal with high volume image scanning or high document inflow by developing a tool for image captioning.
-Install dependencies
 
-`pip3 install flask flask-uploads flask-dropzone`
-`pip3
+*** Install dependencies
+
+`pip3 install flask`
+`pip3 install pickle`
+`pip3 install numpy`
+`pip3 install os`
+`pip3 install glob`
+`pip3 install skimage`
+`pip3 install werkzeug`
 
 and run
 
-`export FLASK_APP=app.py`
-
-`flask run`
+`python3 file.py`
