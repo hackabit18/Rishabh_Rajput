@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import pickle
-import numpy as np
+import numpy as np #for matrix
 import os
 import glob
 import skimage.io as io
